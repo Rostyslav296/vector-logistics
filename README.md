@@ -18,3 +18,5 @@ email instead of sending. The key is made to be public, so it can live in the pa
 
 The fee and the contact details follow the company manifest in the Rostyslav app's Vector
 Logistics page.
+
+Last published with GitHub Pages from `main` (legacy build, `.nojekyll`).
