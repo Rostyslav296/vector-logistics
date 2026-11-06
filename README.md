@@ -1,7 +1,8 @@
 # Vector Logistics
 
 The website for Vector Logistics, a Tennessee-based, American-owned truck dispatching service.
-Plain HTML and CSS, published with GitHub Pages (`.nojekyll`: served as it is, no Jekyll build).
+Plain HTML and CSS, published with GitHub Pages by `.github/workflows/pages.yml` on every push to `main`
+(served as it is, no Jekyll build).
 
 - `index.html`: Home (services, local and American, pricing, how it works, FAQ)
 - `about.html`: About Rusty
@@ -19,4 +20,3 @@ email instead of sending. The key is made to be public, so it can live in the pa
 The fee and the contact details follow the company manifest in the Rostyslav app's Vector
 Logistics page.
 
-Last published with GitHub Pages from `main` (legacy build, `.nojekyll`).
