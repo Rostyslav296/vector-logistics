@@ -20,12 +20,13 @@ ICON = {
 }
 
 def head(title, desc, page, extra=""):
+    canon = "" if page == "index.html" else page
     return f"""<!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{title}</title><meta name="description" content="{desc}">
 <meta name="theme-color" content="#0f1b2d">
 <meta property="og:title" content="{title}"><meta property="og:description" content="{desc}"><meta property="og:type" content="website">
-<meta property="og:image" content="https://rostyslav296.github.io/vector-logistics/images/og-image.png"><meta name="twitter:card" content="summary_large_image">
+<meta property="og:image" content="https://vldispatching.com/images/og-image.png"><meta property="og:url" content="https://vldispatching.com/{canon}"><link rel="canonical" href="https://vldispatching.com/{canon}"><meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="images/favicon.png"><link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
@@ -88,7 +89,7 @@ def faq_ld():
 
 BUSINESS_LD = {"@context": "https://schema.org", "@type": "ProfessionalService", "name": "Vector Logistics",
                "description": "Tennessee-based, American-owned truck dispatching for owner-operators and small fleets. 6% of each load's gross, no contracts.",
-               "telephone": "+1-864-824-1536", "email": EMAIL, "image": "https://rostyslav296.github.io/vector-logistics/images/logo.png",
+               "telephone": "+1-864-824-1536", "email": EMAIL, "image": "https://vldispatching.com/images/logo.png", "url": "https://vldispatching.com/",
                "address": {"@type": "PostalAddress", "addressRegion": "TN", "addressCountry": "US"},
                "areaServed": {"@type": "Country", "name": "United States"}, "priceRange": "6% of load gross"}
 
